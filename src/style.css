@@ -1,3 +1,5 @@
+/* fill sooooo dumb sometimes */
+
 :root {
   --blue-color: rgba(0, 172, 220, 1);
 }
@@ -13,27 +15,29 @@ body {
 
 .container {
   display: flex;
+  height: 50px;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .logo {
-  margin: 10px 50px;
+  margin-left: 50px;
 }
 
 .nav__list {
-  margin-right: 50px;
   display: flex;
   list-style: none;
+  margin-right: 50px;
 }
 
 .nav__list li:not(:first-child) {
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 .link {
-  height: 60px;
+  line-height: 60px;
+  height: 15px;
   position: relative;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
@@ -41,6 +45,10 @@ body {
 }
 
 .link:hover {
+  color: var(--blue-color);
+}
+
+.is-active {
   color: var(--blue-color);
 }
 
